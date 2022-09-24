@@ -10,7 +10,7 @@ class Child
   }
     public static void main(String args[])
     {
-      Parent p=new Parent()
+      Parent parentObject=new Parent()
       {
         @Override
         void println()
@@ -19,6 +19,6 @@ class Child
           new Child().print();
         }
       };
-      p.println();     
+      parentObject.println();     
     }  
 }  
