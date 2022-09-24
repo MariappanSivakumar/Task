@@ -20,7 +20,7 @@ class CallA extends Child
 	public static void main(String ar[])
 	{
 		//   >>>>>>>  Second Way Of Solving      <<<
-		Call c=new Call();
-		c.print();
+		Call callObject=new Call();
+		callObject.print();
 	}
 }
