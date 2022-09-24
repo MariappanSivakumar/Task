@@ -1,9 +1,9 @@
 class Parent
 {
-	public void print(Parent p)
+	public void print(Parent parentObject)
 	{
 		System.out.println("Parent class is called");
-		p.println();
+		paretObject.println();
 	}
 }
 class Child extends Parent
@@ -18,7 +18,7 @@ class Call extends Child
 	public static void main(String ar[])
 	{
 		//   >>>>>>>  One Way Of Solving      <<<
-		Call c=new Call();
-		c.print((Child)c);
+		Call callObject=new Call();
+		callObject.print((Child)callObject);
 	}
 }
