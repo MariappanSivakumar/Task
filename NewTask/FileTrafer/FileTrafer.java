@@ -5,9 +5,9 @@ public class FileTranferUsingPrority {
         java.io.FileInputStream OriginalFile = null;
         java.io.FileOutputStream DuplicateFile = null;
         try {
-            OriginalFile = new java.io.FileInputStream(
+            OriginalFiles = new java.io.FileInputStream(
                     "E:/jdk1.3/bin/"+filename);
-            java.io.File f = new java.io.File("C:/Users/useja/Desktop/FileTranfer/"+filename);
+            java.io.File transger = new java.io.File("C:/Users/useja/Desktop/FileTranfer/"+filename);
             System.out.println(f.length());
             DuplicateFile = new java.io.FileOutputStream(f);
 
