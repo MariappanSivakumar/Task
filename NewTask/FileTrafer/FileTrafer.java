@@ -7,13 +7,13 @@ public class FileTranferUsingPrority {
         try {
             OriginalFiles = new java.io.FileInputStream(
                     "E:/jdk1.3/bin/"+filename);
-            java.io.File transger = new java.io.File("C:/Users/useja/Desktop/FileTranfer/"+filename);
-            System.out.println(f.length());
+            java.io.File transferFileLocation = new java.io.File("C:/Users/useja/Desktop/FileTranfer/"+filename);
+            System.out.println(transferFileLocation.length());
             DuplicateFile = new java.io.FileOutputStream(f);
 
-            int c;
+            int singleCharacter;
 
-            while ((c = OriginalFile.read()) != -1) {
+            while ((singleCharacter = OriginalFile.read()) != -1) {
                 DuplicateFile.write(c);
             }
             //System.out.println(filename+" ---> Tranfered Succussfully");
@@ -21,7 +21,7 @@ public class FileTranferUsingPrority {
             System.out.println("File not Found");
         } catch (java.io.IOException e) {}
     }
-    public void StepByStepFileTranferProcess()
+    public void InternalProcesstoFileTranfer()
     {
        java.util.Map<Long,String> FileandSizeStore = new java.util.HashMap();
         java.util.PriorityQueue<Long> numberWiseSort = new java.util.PriorityQueue<Long>();
