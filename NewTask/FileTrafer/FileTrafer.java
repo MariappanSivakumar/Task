@@ -21,7 +21,7 @@ public class FileTranferUsingPrority {
             System.out.println("File not Found");
         } catch (java.io.IOException e) {}
     }
-    public void Process()
+    public void StepByStepFileTranferProcess()
     {
        java.util.Map<Long,String> FileandSizeStore = new java.util.HashMap();
         java.util.PriorityQueue<Long> numberWiseSort = new java.util.PriorityQueue<Long>();
@@ -40,6 +40,6 @@ public class FileTranferUsingPrority {
         System.out.println(FileandSizeStore);
     }
     public static void main(String ar[]) {
-        new FileTranferUsingPrority().Process();
+        new FileTranferUsingPrority().StepByStepFileTranferProcess();
     }
 }
